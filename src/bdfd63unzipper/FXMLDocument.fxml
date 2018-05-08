@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="320.0" prefWidth="488.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bdfd63unzipper.FXMLDocumentController">
+    <children>
+      <Button id="chooseFileButton" fx:id="chooseFileButton" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="14.0" onAction="#selectFile" prefHeight="25.0" prefWidth="112.0" text="Select File" />
+      <Button id="startButton" fx:id="startButton" layoutX="14.0" layoutY="123.0" mnemonicParsing="false" onAction="#startUnzip" prefHeight="32.0" prefWidth="112.0" text="Start/Resume" />
+      <Button id="stopButton" fx:id="stopButton" layoutX="15.0" layoutY="178.0" mnemonicParsing="false" onAction="#stopUnzip" prefHeight="32.0" prefWidth="112.0" text="Stop/Pause" />
+      <Button id="selectDestinationButton" fx:id="chooseDestinationButton" alignment="CENTER" layoutX="15.0" layoutY="52.0" mnemonicParsing="false" onAction="#selectDestination" text="Select Destination" />
+      <TextArea id="pathsToExtractedFilesTextArea" fx:id="extractedPathsTextArea" editable="false" layoutX="143.0" layoutY="105.0" prefHeight="126.0" prefWidth="326.0" promptText="Extracted filepaths" />
+      <ProgressBar id="progressBar" fx:id="progressBar" layoutX="143.0" layoutY="257.0" prefHeight="20.0" prefWidth="326.0" progress="0.0" />
+      <Label id="statusLabel" fx:id="status" alignment="CENTER" layoutX="253.0" layoutY="293.0" text="Status: Not Running" />
+      <TextField id="destinationPath" fx:id="destinationDir" editable="false" layoutX="144.0" layoutY="52.0" prefHeight="25.0" prefWidth="326.0" promptText="Destination Path" />
+      <TextField id="filePath" fx:id="filePath" editable="false" layoutX="143.0" layoutY="14.0" prefHeight="25.0" prefWidth="326.0" promptText="File Path" />
+    </children>
+</AnchorPane>

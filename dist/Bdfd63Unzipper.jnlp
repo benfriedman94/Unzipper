@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Bdfd63Unzipper.jnlp">
+  <information>
+    <title>Bdfd63Unzipper</title>
+    <vendor>Ben</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Bdfd63Unzipper.jar" size="11567" download="eager" />
+    <jar href="lib\zip4j_1.3.2.jar" size="131025" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Bdfd63Unzipper" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="bdfd63unzipper.Bdfd63Unzipper"  name="Bdfd63Unzipper" />
+  <update check="always"/>
+</jnlp>
